@@ -54,3 +54,19 @@ do {                                    // dowhile loop to collect responses unt
 } while (responses < 3);
 
 console.log(`Collected 3 responses.`)       // Final output when responses gets to 3
+
+
+
+
+
+// Task 5 - Employee Information
+
+let employee = {                            // Original employee object with three properties: Name, position, and salary
+    name: "Alice", 
+    position: "Manager", 
+    salary: 75000
+};
+
+for (let property in employee) {                            //  for...in statement to list out each property of the employee objects
+    console.log(`${property}: ${employee[property]}`)       // Final output of the employee
+}
