@@ -2,7 +2,7 @@
 
 let purchaseamount = 150;       // Starting price for the product
 
-let finalamount;                // Setting up the ifelse condition if amount exceeds $100
+let finalamount;                // Setting up the ifelse discount condition if amount exceeds $100
 
 if (purchaseamount > 100) {
     finalamount = purchaseamount * 0.85
@@ -40,3 +40,17 @@ while (stock > 0) {                                 // while loop to deplete the
 };
 
 console.log(`Stock is now zero.`)                   // Final output after stock has reached 0
+
+
+
+
+// Task 4 - Customer Survey
+
+let responses = 0                       // Original ouput with responses at 0
+
+do {                                    // dowhile loop to collect responses until it reaches 3
+    responses++;
+    console.log(`Response count: ${responses}`)
+} while (responses < 3);
+
+console.log(`Collected 3 responses.`)       // Final output when responses gets to 3
