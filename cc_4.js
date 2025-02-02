@@ -1,6 +1,6 @@
 // Task 1 - Customer Discounts
 
-let purchaseamount = 150;       // Starting price for the product
+var purchaseamount = 150;       // Starting price for the product
 
 let finalamount;                // Setting up the ifelse discount condition if amount exceeds $100
 
@@ -11,6 +11,8 @@ if (purchaseamount > 100) {
 };
 
 console.log(`Grand Total after applicable discount: $${finalamount}`);      // Final output after applicable discounts
+
+
 
 
 
@@ -30,6 +32,7 @@ console.log(`Total Sales: $${totalsales}`);          // Final output after addin
 
 
 
+
 // Task 3 - Inventory Depletion
 
 let stock = 10;                         // Declaring stock to have an inital value of 10
@@ -44,6 +47,8 @@ console.log(`Stock is now zero.`)                   // Final output after stock 
 
 
 
+
+
 // Task 4 - Customer Survey
 
 let responses = 0                       // Original ouput with responses at 0
@@ -54,6 +59,7 @@ do {                                    // dowhile loop to collect responses unt
 } while (responses < 3);
 
 console.log(`Collected 3 responses.`)       // Final output when responses gets to 3
+
 
 
 
@@ -75,6 +81,7 @@ for (let property in employee) {                            //  for...in stateme
 
 
 
+
 // Task 6 - Product Listings
 
 const products = ["Apples", "Bananas", "Oranges"];          // Original product listing
@@ -86,6 +93,8 @@ for (const product of products) {                           // for...of loop whi
 
 
 
+
+
 // Task 7 - Order Processing
 
 const orders = [200, 201, 202];                     // OrderID numbers for the original output
@@ -93,6 +102,8 @@ const orders = [200, 201, 202];                     // OrderID numbers for the o
 orders.forEach(orderID => {                         // foreach loop which logs each orderID number
     console.log(`OrderIDs: ${orderID}`)             // Final Output
 });
+
+
 
 
 
@@ -112,6 +123,9 @@ console.log(`The tax on $${amount} at a ${taxrate * 100}% tax rate is $${tax}.`)
 
 
 
+
+
+
 // Task 9 - Discount Application
 
 const applydiscount = function(price, discountPercentage) {             // The discount function to return a discounted price
@@ -125,3 +139,19 @@ const discountPercentage = 15;                                           // Set 
 const discountPrice = applydiscount(price, discountPercentage);          // Incorprating the function to return the discount price
 
 console.log (`The total after the ${discountPercentage}% off coupon is $${discountPrice}`);         // Final Output
+
+
+
+
+
+
+// Task 10 - Loyalty Points
+
+const calculatePoints = (purchaseamount) => {                           // Formula to calculate the points from transactions
+    return (purchaseamount / 10);
+};
+
+var purchaseamount = 200;                                               // Original set amount using var because my Task 1 had a "purchaseamount" variable already
+const points = calculatePoints (purchaseamount);                        // Calculating how much points to give
+
+console.log(`For this $${purchaseamount} transaction, you earned ${points} points.`)            // Final Output
