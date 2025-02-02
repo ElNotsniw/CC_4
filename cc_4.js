@@ -81,4 +81,15 @@ const products = ["Apples", "Bananas", "Oranges"];
 
 for (const product of products) {
     console.log(`Product: ${product}`)
-}
+};
+
+
+
+
+// Task 7 - Order Processing
+
+const orders = [200, 201, 202];
+
+orders.forEach(orderID => {
+    console.log(`OrderIDs: ${orderID}`)    
+});
