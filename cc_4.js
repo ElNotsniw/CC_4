@@ -70,3 +70,15 @@ let employee = {                            // Original employee object with thr
 for (let property in employee) {                            //  for...in statement to list out each property of the employee objects
     console.log(`${property}: ${employee[property]}`)       // Final output of the employee
 }
+
+
+
+
+
+// Task 6 - Product Listings
+
+const products = ["Apples", "Bananas", "Oranges"];
+
+for (const product of products) {
+    console.log(`Product: ${product}`)
+}
