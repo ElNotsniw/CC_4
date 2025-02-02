@@ -77,10 +77,10 @@ for (let property in employee) {                            //  for...in stateme
 
 // Task 6 - Product Listings
 
-const products = ["Apples", "Bananas", "Oranges"];
+const products = ["Apples", "Bananas", "Oranges"];          // Original product listing
 
-for (const product of products) {
-    console.log(`Product: ${product}`)
+for (const product of products) {                           // for...of loop which list out each product
+    console.log(`Product: ${product}`)                      // Final Output
 };
 
 
@@ -88,8 +88,24 @@ for (const product of products) {
 
 // Task 7 - Order Processing
 
-const orders = [200, 201, 202];
+const orders = [200, 201, 202];                     // OrderID numbers for the original output
 
-orders.forEach(orderID => {
-    console.log(`OrderIDs: ${orderID}`)    
+orders.forEach(orderID => {                         // foreach loop which logs each orderID number
+    console.log(`OrderIDs: ${orderID}`)             // Final Output
 });
+
+
+
+
+// Task 8 - Tax Calculation
+
+function calculateTax(amount, taxrate) {                // Original function for calculating taxrate
+    return amount * taxrate;                            // Final Output
+};
+
+
+const amount = 300;                                     // The set amount
+const taxrate = 0.20;                                   // The set taxrate
+const tax = calculateTax(amount, taxrate);              // The formula for calculating taxes of the set amount
+
+console.log(`The tax on $${amount} at a ${taxrate * 100}% tax rate is $${tax}.`);           // Final Output
