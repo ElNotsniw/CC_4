@@ -108,4 +108,20 @@ const amount = 300;                                     // The set amount
 const taxrate = 0.20;                                   // The set taxrate
 const tax = calculateTax(amount, taxrate);              // The formula for calculating taxes of the set amount
 
-console.log(`The tax on $${amount} at a ${taxrate * 100}% tax rate is $${tax}.`);           // Final Output
+console.log(`The tax on $${amount} at a ${taxrate * 100}% tax rate is $${tax}.`);           // Final Output'
+
+
+
+// Task 9 - Discount Application
+
+const applydiscount = function(price, discountPercentage) {             // The discount function to return a discounted price
+    const dicsount = price * (discountPercentage / 100);
+    const discountPrice = price - dicsount;
+    return discountPrice;
+};
+
+const price = 500                                                        // Set price
+const discountPercentage = 15;                                           // Set discount percentage   
+const discountPrice = applydiscount(price, discountPercentage);          // Incorprating the function to return the discount price
+
+console.log (`The total after the ${discountPercentage}% off coupon is $${discountPrice}`);         // Final Output
